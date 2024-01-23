@@ -12,3 +12,16 @@ Undefined command: "gcc".  Try "help".
 Undefined command: "".  Try "help".
 +q
 +q
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem01.exe 
+[New Thread 2512.0x2798]
+[New Thread 2512.0x2d6c]
+[Inferior 1 (process 2512) exited normally]
++n
+The program is not being run.
++n
+The program is not being run.
++q
++b main
+Breakpoint 1 at 0x40146e: file c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem01.c, line 4.
++q
