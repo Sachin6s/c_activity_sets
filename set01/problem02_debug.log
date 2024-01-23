@@ -1,0 +1,15 @@
++n
+The program is not being run.
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem02.exe 
+[New Thread 6644.0x1014]
+[New Thread 6644.0x20a4]
+[Inferior 1 (process 6644) exited normally]
++n
+The program is not being run.
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem02.exe 
+[New Thread 1488.0x2940]
+[New Thread 1488.0x3274]
+[Inferior 1 (process 1488) exited normally]
++q
