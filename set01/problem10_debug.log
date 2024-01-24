@@ -1,0 +1,27 @@
++b main
+Breakpoint 1 at 0x401471: file c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem10.c, line 8.
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem10.exe 
+[New Thread 4580.0x285c]
+[New Thread 4580.0x1ec0]
+
+Breakpoint 1, main () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem10.c:8
+8	    input_two_strings(string1, string2);
++s
+input_two_strings (string1=0x61feb8 "\034C¤uüþa", string2=0x61fe54 "¬êÕ°¨þa")
+    at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem10.c:14
+14	    printf("Enter the first string: ");
++s
+15	    scanf("%s", string1);
++s
+16	    printf("Enter the second string: ");
++n
+17	    scanf("%s", string2);
++n
+18	}
++q
+A debugging session is active.
+
+	Inferior 1 [process 4580] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
