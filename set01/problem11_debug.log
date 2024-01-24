@@ -1,0 +1,42 @@
++b main
+Breakpoint 1 at 0x40146e: file c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem11.c, line 13.
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem11.exe 
+[New Thread 10736.0x18b0]
+[New Thread 10736.0x18ac]
+
+Breakpoint 1, main () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem11.c:13
+13	    complex1 = input_complex();
++r
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
++s
+input_complex () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem11.c:21
+21	    printf("Enter the real part: ");
++s
+22	    scanf("%f", &c.real);
++s
+23	    printf("Enter the imaginary part: ");
++n
+24	    scanf("%f", &c.imaginary);
++n
+25	    return c;
++n
+26	}
++n
+main () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem11.c:14
+14	    complex2 = input_complex();
++n
+15	    sum = add_complex(complex1, complex2);
++n
+16	    output(complex1, complex2, sum);
++n
+17	    return 0;
++n
+18	}
++q
+A debugging session is active.
+
+	Inferior 1 [process 10736] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
