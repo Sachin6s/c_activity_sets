@@ -1,0 +1,40 @@
++b main
+Breakpoint 1 at 0x401477: file c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem12.c, line 14.
++r
+Starting program: c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01/./problem12.exe 
+[New Thread 13684.0x3368]
+[New Thread 13684.0x13b4]
+
+Breakpoint 1, 0x00401477 in main ()
+    at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem12.c:14
+14	int main() {
++s
+17	    n = get_n();
++s
+get_n () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem12.c:26
+26	    printf("Enter the number of complex numbers (n): ");
++s
+27	    scanf("%d", &n);
++s
+28	    return n;
++n
+29	}
++n
+main () at c:\Users\Admin\OneDrive\Documents\GitHub\c_activity_sets\set01\problem12.c:18
+18	    Complex complexNumbers[n];
++n
+
+Program received signal SIGSEGV, Segmentation fault.
+__chkstk_ms () at ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:172
+172	../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S: No such file or directory.
++n
+
+Program received signal SIGSEGV, Segmentation fault.
+__chkstk_ms () at ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:172
+172	in ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S
++q
+A debugging session is active.
+
+	Inferior 1 [process 13684] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
