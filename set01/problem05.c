@@ -14,10 +14,10 @@ int main() {
     return 0;
 }
 int input() {
-    int x;
+    int num;
     printf("Enter a number: ");
-    scanf("%d",&x);
-    return x;
+    scanf("%d",&num);
+    return num;
 }
 int compare(int a,int b,int c) {
     int largest = (a>b)?((a>c)?a:c):((b>c)?b:c);
