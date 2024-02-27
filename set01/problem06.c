@@ -1,38 +1,29 @@
-#include <stdio.h>
-int input();
-void compare(int a,int b,int c,int *largest);
-void output(int a,int b,int c,int largest);
-int main()
-{
-int a,b,c,largest;
-a=input();
-b=input();
-c=input();
-compare(a,b,c,&largest);
-output(a,b,c,largest);
+#include<stdio.h>
+int input(int *a, int *b, int *c);
+void compare(int a, int b, int c, int *largest);
+void output(int a, int b, int c, int largest);
+int main(){
+    int a,b,c,largest;
+    input(&a,&b,&c);
+    compare(a,b,c,&largest);
+    output(a,b,c,largest);
+    return 0;
 }
-int input()
-{
-int x;
-printf("enter the number:");
-scanf("%d",&x);
-return x;
+int input(int *a, int *b, int *c){
+    printf("Enter the values of a,b and c\n");
+    scanf("%d%d%d",a,b,c);
 }
-void compare(int a,int b,int c,int *largest)
-{
-if(a>=b && a>=c)
-{
-*largest=a;
+void compare(int a, int b, int c, int *largest){
+    if (a>=b && a>=c){
+        *largest=a;
+    }
+    else if (b>=a && b>=c){
+        *largest=b;
+    }
+    else{
+        *largest=c;
+    }
 }
-else{ if(b>=a && b>=c)
-{
-*largest=b;
-}
-else{
-*largest=c;
-}}
-}
-void output(int a,int b,int c,int largest)
-{
-printf("the largest among the three numbers is %d\n",largest);
+void output(int a, int b, int c, int largest){
+    printf("The largest among %d,%d and %d is: %d\n",a,b,c,largest);
 }
