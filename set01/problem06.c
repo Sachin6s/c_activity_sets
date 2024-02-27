@@ -13,10 +13,10 @@ output(a,b,c,largest);
 }
 int input()
 {
-int num;
+int x;
 printf("enter the number:");
-scanf("%d",&num);
-return num;
+scanf("%d",&x);
+return x;
 }
 void compare(int a,int b,int c,int *largest)
 {
