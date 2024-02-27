@@ -1,11 +1,11 @@
 #include<stdio.h>
 int input_n();
-int sum_n_nos(int n);
+int sum_n_nos(int n,int sum);
 void output(int n, int sum);
 int main(){
-    int n,sum;
+    int n,sum=0;
     n=input_n();
-    sum=sum_n_nos(n);
+    sum=sum_n_nos(n,sum);
     output(n,sum);
     return 0;
 }
@@ -15,8 +15,8 @@ int input_n(){
     scanf("%d",&x);
     return x;
 }
-int sum_n_nos(int n){
-    int i,sum;
+int sum_n_nos(int n,int sum){
+    int i;
     for (i=1;i<=n;i++)
     {
          sum=sum+i;      
@@ -24,5 +24,5 @@ int sum_n_nos(int n){
     return sum;
 }
 void output(int n, int sum){
-    printf("The sum of natural numbers until %d is: %d\n",n,sum);
+    printf("The sum of  %d is: %d\n",n,sum);
 }
