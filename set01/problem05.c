@@ -20,7 +20,18 @@ int input() {
     return num;
 }
 int compare(int a,int b,int c) {
-    int largest = (a>b)?((a>c)?a:c):((b>c)?b:c);
+    int largest;
+    if(a>=b && a>=c)
+{
+ largest=a;
+}
+else{ if(b>=a && b>=c)
+{
+largest=b;
+}
+else{
+largest=c;
+}}
     return largest;
 }
 void output(int a,int b,int c,int largest) {
