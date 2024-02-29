@@ -10,10 +10,10 @@ int main(){
     return 0;
 }
 int input_n(){
-    int x;
+    int n;
     printf("Enter the value of n:\n");
-    scanf("%d",&x);
-    return x;
+    scanf("%d",&n);
+    return n;
 }
 int sum_n_nos(int n,int sum){
     int i;
