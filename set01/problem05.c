@@ -12,10 +12,10 @@ int main(){
     return 0;
 }
 int input(){
-    int num;
+    int x;
     printf("Enter the value:\n");
-    scanf("%d",&num);
-    return num;
+    scanf("%d",&x);
+    return x;
 }
 int compare(int a, int b, int c){
     int largest;
